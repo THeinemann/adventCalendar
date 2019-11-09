@@ -1,10 +1,11 @@
 from typing import List, Dict
 import random
+from dataclasses import dataclass
 
+@dataclass
 class Stock:
-    def __init__(self, name, amount):
-        self.name = name
-        self.amount = amount
+    name: str
+    amount: int
 
 Name = str
 AdventCalendar = Dict[int, str]
